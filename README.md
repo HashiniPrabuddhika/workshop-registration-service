@@ -143,27 +143,6 @@ All routes except login require `Authorization: Bearer <token>`. Errors use one 
 
 Notable status codes: `409 WORKSHOP_FULL`, `409 ALREADY_REGISTERED`, `409 ALREADY_CANCELLED`, `409 CAPACITY_BELOW_REGISTRATIONS`, `400 VALIDATION_ERROR`, `401`, `403`.
 
-## Project structure
-
-```
-workshop-registration-service
-  README.md                 this file
-  DESIGN.md                 design document: choices, trade-offs, assumptions
-  backend
-    src
-      app.ts, server.ts, config.ts, db.ts, seed.ts
-      permissions.ts        role to permission matrix, single source of truth
-      schemas.ts            Zod schemas for all input
-      middleware            authentication, permission checks, error handling
-      routes                thin HTTP layer
-      services              business rules and transactions
-    tests                   access control and capacity tests
-  frontend
-    src
-      api.ts, auth.tsx, hooks.ts, format.ts
-      components            layout, modal, seat meter, toasts, pagination
-      pages                 login, workshops, workshop detail, accounts, change log
-```
 
 ## Known limitations
 
@@ -179,6 +158,3 @@ workshop-registration-service
 - **Port already in use:** set `PORT` for the API, or stop the other process.
 - **Reset demo data:** stop the server, delete `backend/data`, start again.
 
-## Further reading
-
-See [DESIGN.md](DESIGN.md) for technology choices, how over-registration is prevented, trade-offs, assumptions and what was skipped.
