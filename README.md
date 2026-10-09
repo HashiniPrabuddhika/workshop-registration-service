@@ -1,9 +1,9 @@
 # Workshop Registration Service
 
-> Full-stack workshop registration system with role-based access (Admin / Manager / Staff), race-safe seat capacity enforcement, permanent registration history and workshop search by date, status and availability.
+Full-stack workshop registration system with role-based access (Admin / Manager / Staff), race-safe seat capacity enforcement, permanent registration history and workshop search by date, status and availability.
 
 **Stack:** React · Vite · TypeScript · Node.js · Express · SQLite · Zod · JWT
-**Bonus delivered:** Audit trail. **Not built:** Waitlist (see [Known limitations](#known-limitations) and [DESIGN.md](DESIGN.md)).
+**Bonus delivered:** Audit trail.
 
 A full stack web application for a community training centre with branches in Colombo, Kandy and Galle. Front desk staff register attendees for workshops with limited seats, programme managers schedule workshops, and administrators manage staff accounts. The system guarantees that a workshop is never overbooked, even when several staff register people for the same workshop at the same moment.
 
