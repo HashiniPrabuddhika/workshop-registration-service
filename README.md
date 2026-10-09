@@ -29,6 +29,7 @@ A full stack web application for a community training centre with branches in Co
 
 ## Getting started
 
+
 Requirements: Node.js 20 or newer (22 LTS recommended) and npm.
 
 ```bash
